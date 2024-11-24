@@ -1,0 +1,147 @@
+/* JVCodes.Com */
+body {
+    font-family: Arial, sans-serif; /* Set default font */
+    background-color: #f8f9fa; /* Light background color */
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    background-color: white; /* White container background */
+    padding: 20px; /* Add inner spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+    width: 100%; /* Full width with max limit */
+    max-width: 650px;
+    display: flex; /* Flex layout for sections */
+    gap: 20px; /* Space between sections */
+}
+
+/* Left Section Styles */
+.left-section {
+    width: 55%; /* Allocate more space for left section */
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.left-section h1 {
+    margin: 0; /* Remove unnecessary margins */
+    font-size: 1.9rem; /* Adjust heading size */
+    color: #303030; /* Dark gray text */
+    margin-top: 5px; /* Reduce space above heading */
+    margin-bottom: 15px; /* Add space below heading */
+}
+
+/* Right Section Styles */
+.right-section {
+    width: 45%; /* Allocate remaining space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+    padding: 10px; /* Inner spacing */
+    background-color: #f1f1f1; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Inner shadow */
+}
+
+.right-section h1 {
+    margin: 0; /* Reset margin */
+    font-size: 1.4rem; /* Smaller heading size */
+    color: #a83232; /* Red color */
+    margin-top: 10px; /* Add spacing above */
+    margin-bottom: 15px; /* Add spacing below */
+}
+
+/* Result Section Styles */
+#result p {
+    margin: 5px 0; /* Compact spacing */
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #303030; /* Dark text color */
+}
+
+.result-value {
+    color: #007bff; /* Highlight result values in blue */
+}
+
+/* Form Input and Label Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+    font-size: 1rem; /* Standard label text size */
+    margin-bottom: 5px;
+    color: #303030; /* Dark gray color */
+    display: block; /* Ensure labels are block-level */
+}
+
+input {
+    width: 100%; /* Full-width inputs */
+    padding: 8px; /* Inner padding */
+    font-size: 1rem; /* Standard text size */
+    border: 1px solid #a3a3a3; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 5px;
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* Full-width buttons */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    font-size: 1.2rem; /* Slightly larger text */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Inner padding */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button.small-btn {
+    width: 48%; /* Smaller buttons */
+    font-size: 1rem; /* Standard text size */
+    background-color: #6c757d; /* Gray background */
+}
+
+button.small-btn:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button-group {
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-between; /* Space between buttons */
+    gap: 10px; /* Add space between buttons */
+}
+
+input:focus, button:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Highlight border on focus */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+        padding-right: 35px; /* Consistent padding */
+        margin: 20px; /* Outer spacing */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .right-section {
+        margin-top: 0px; /* Spacing between sections */
+    }
+
+    .right-section h1 {
+        margin-top: 5px; /* Adjust spacing above */
+        margin-bottom: 10px; /* Adjust spacing below */
+    }
+}

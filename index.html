@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Developed by JV Codes | jvcodes.com -->
+  <meta charset="UTF-8"> <!-- Character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta -->
+  <title>Sales Tax Calculator</title> <!-- Title displayed in the browser tab -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <!-- Main container for the layout -->
+  <div class="container">
+    <!-- Left section for input fields and buttons -->
+    <div class="left-section">
+      <h1>Sales Tax Calculator</h1> <!-- Heading for the application -->
+      <!-- Input for the price before tax -->
+      <div class="form-group">
+        <label for="price">Before Tax Price:</label>
+        <input type="number" id="price" placeholder="Enter price" />
+      </div>
+      <!-- Input for the sales tax percentage -->
+      <div class="form-group">
+        <label for="tax">Sales Tax %:</label>
+        <input type="number" id="tax" placeholder="Enter tax rate" />
+      </div>
+      <!-- Buttons for calculating and clearing inputs -->
+      <div class="button-group">
+        <button id="calculate-btn">Calculate</button>
+        <button id="clear-btn" class="small-btn">Clear</button>
+      </div>
+    </div>
+    <!-- Right section to display results -->
+    <div class="right-section">
+      <h1>Results:</h1> <!-- Results heading -->
+      <div id="result">
+        <!-- Placeholder paragraphs for result display -->
+        <p>Before Tax Price: <span class="result-value"></span></p>
+        <p>Sales Tax: <span class="result-value"></span></p>
+        <p>After Tax Price: <span class="result-value"></span></p>
+      </div>
+    </div>
+  </div>
+  <!-- External JavaScript file for functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
